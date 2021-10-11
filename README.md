@@ -2,7 +2,7 @@
 #ECE601
 programme ECE 601 is used for tracing the news on US open Tennis competition through twitter API
 
-Building an app for tennis fans.
+Building for tennis fans.
 
 The project is built on the base of twitter and google NLP to accomplish the following functions:
 The program search and post twitters from the official accounts from international competitions, tennis players, tennis players, other related staffs and famous analyzing accounts. The program aims to get the locations, texts and times.
