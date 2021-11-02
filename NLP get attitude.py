@@ -5,11 +5,16 @@ from google.cloud import language
 from google.cloud.language import enums
 from google.cloud.language import types
 
-def i=0
-def j=0
-def K=0
-def t=''
+i=0
+j=0
+K=0
+t=''
 def anatweet(str)
+
+      i=0
+      j=0
+      K=0
+      t=''
       consumer_key = "******"
       consumer_secret = "******"
       access_key = "******"
@@ -46,7 +51,7 @@ def anatweet(str)
 
 
       i=i/j 
-      tweets_find = api.search('Genshin',count='20')
+      tweets_find = api.search(str,count='20')
       for search_tweet in tweets_find:
           print('\n')
           print('tweet text:',search_tweet.text)
