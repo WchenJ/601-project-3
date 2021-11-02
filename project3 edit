@@ -61,6 +61,6 @@ def anatweet (str):
 
 if __name__ == "__main__":
     try:
-        anatweet("US Open Thiem")
+        anatweet("@US Open Thiem")
     except tweepy.error.TweepError as e:
         print("A mistake occur, please search according to"+ str(e))
