@@ -1,0 +1,8 @@
+likes:
+1.it is able to handle a series of examples of queries using various criteria at once which means that it is okay to type in any combination of task that need to handle as one group and wait for the output
+2.giving thorough error warning for several most-likely-occur problems. Giving the warning out of program instead of directly by python helps user to know better about what is happning when program stucks
+3.giving thorough instructions about using the programme
+improvements:
+1.seven days is not that enough to be a realiable sample pool for using and analyzing, if possible ,could change another more precise way to search the tweeets like by how much likes a tweet gets
+2.the warning of error-handling part could cover more errors instead of a few main problems, it will make the whole programme be more friendly to the new user
+3.if possible, could get the location of every tweet itself instead of just getting the location of the user cause the location of the user could easily change as time goes.
