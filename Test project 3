@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov  8 21:04:35 2021
+
+@author: ece
+"""
+
+import 601projec3finalmain
+import os
+
+
+
+def main():
+    analyze_tweets('US open Thiem',50)
+    analyze_tweets('@Thiem',50)
+    analyze_tweets('@1',50)
