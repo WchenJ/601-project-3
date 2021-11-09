@@ -208,12 +208,10 @@ def analyze_tweets(keyword, total_tweets):
         print("Location: " + str(usr.location))
         return 0
 
-def main():
+    
+if __name__ == '__main__':
     try:
         analyze_tweets('US open Thiem',50)
     except tweepy.error.TweepError as e:
         print("A mistake occur, please search according to"+ str(e))
 
-    
-if __name__ == '__main__':
-    main()
