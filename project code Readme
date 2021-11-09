@@ -2,3 +2,4 @@
 #       2.fill in the filepath of json file
 #       3.fill in the token of twitter
 #       4.please use tweepy version 4.3.0
+#       5.please put testfile and code file in the same browser
