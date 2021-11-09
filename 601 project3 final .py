@@ -73,11 +73,11 @@ states = {
             'WI': 'Wisconsin',
             'WY': 'Wyoming'
          }
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=""
-CONS_KEY = ""
-CONS_SECRET = ""
-ACC_TOKEN = ""
-ACC_SECRET = ""
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/home/ece/601/project3a/spatial-cat-330420-5cde49af3077.json"
+CONS_KEY = "7SQ9zTkVzSUTCSmQwAWNfFhlN"
+CONS_SECRET = "SrTukUTxscCZJw8KcVE9F6DuLZP7VoSjA7g5UCsgbmNyUWXRWC"
+ACC_TOKEN = "953810107711750144-wvp5EvmOGbZApLfMwtUGNYb4aliJhWt"
+ACC_SECRET = "jYK3ZABgjfTauBMnnhxhcfUD2PIgwsNbQ33gGHe8ZL8mA"
 
 
 def authentication(cons_key, cons_secret, acc_token, acc_secret):
@@ -97,7 +97,7 @@ def search_tweets(keyword, total_tweets):
                                   q=keyword, 
                                   since=yesterday_date, 
                                   result_type='recent', 
-                                  lang='en').items(total_tweets)
+                                  lang='en').items(total_tweets)  
     return search_result
 
 
@@ -169,7 +169,7 @@ def analyze_tweets(keyword, total_tweets):
         tt=''
         tweets = search_tweets(keyword,total_tweets)
         for tweet in tweets:
-            # cleaned_tweet = clean_tweets(tweet.text.encode('utf-8'))
+            cleaned_tweet = clean_tweets(tweet.text.encode('utf-8'))
             score, magnitude = get_sentiment_score(tweet)
             total+= int(magnitude)*int(score)
             j=j+1
@@ -202,16 +202,18 @@ def analyze_tweets(keyword, total_tweets):
         
         return total
     else:
-        screen_name=keyword
         api = authentication(CONS_KEY,CONS_SECRET,ACC_TOKEN,ACC_SECRET)
-        usr = api.get_user(name=screen_name)
+        usr = api.get_user(screen_name=keyword)
         print("Location: " + str(usr.location))
         return 0
 
-    
-if __name__ == '__main__':
+def main():
     try:
         analyze_tweets('US open Thiem',50)
-    except tweepy.error.TweepError as e:
-        print("A mistake occur, please search according to"+ str(e))
+        analyze_tweets('@ThiemDomi',50)
+    except tweepy.TweepyException as e:
+        print("A mistake occur, please search according to: \n"+ str(e))
 
+    
+if __name__ == '__main__':
+    main()
