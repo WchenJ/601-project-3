@@ -211,6 +211,7 @@ def main():
     try:
         analyze_tweets('US open Thiem',50)
         analyze_tweets('@ThiemDomi',50)
+        analyze_tweets('@1',50)
     except tweepy.TweepyException as e:
         print("A mistake occur, please search according to: \n"+ str(e))
 
