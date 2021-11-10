@@ -6,12 +6,12 @@ Created on Mon Nov  8 21:04:35 2021
 @author: ece
 """
 
-import 601projec3finalmain
+import 601projec3finalmain as 601
 import os
 
 
 
 def main():
-    analyze_tweets('US open Thiem',50)
-    analyze_tweets('@Thiem',50)
-    analyze_tweets('@1',50)
+    601.analyze_tweets('US open Thiem',50)
+    601.analyze_tweets('@Thiem',50)
+    601.analyze_tweets('@1',50)
