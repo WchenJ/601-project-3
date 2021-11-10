@@ -10,8 +10,10 @@ import 601projec3finalmain as 601
 import os
 
 
-
 def main():
-    601.analyze_tweets('US open Thiem',50)
-    601.analyze_tweets('@Thiem',50)
-    601.analyze_tweets('@1',50)
+    def a=''
+    def b=0
+    a=input('please insert keyword:')
+    b=int(input('please insert tweet number:'))-int('0')
+    601.analyze_tweets(a,b)
+
