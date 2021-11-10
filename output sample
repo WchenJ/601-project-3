@@ -1,0 +1,41 @@
+
+testcase1： Functionality under normal use case
+discription： searching tweets based on keywords by inserting keyword without @
+input case： keyword：‘US open Thiem’ total——tweets： 50
+output:
+the total attitude score is -0.03000000089406968 
+
+
+
+here is the attitude contradiction bar 
+ 
+
+     [******||||||||||]     
+positive            negative
+
+ 
+
+the attitude is NEGATIVE 
+ which is calculate from 34 samples in which 29 samples has been count and 13 is neutral
+ 
+ 
+ 
+ 
+
+testcase2: Functionality under normal use case
+discription： searching user by inserting keyword with @ at the front of it
+input case： keyword：‘@rogerfederer’ total——tweets： 50
+output:
+Location: Switzerland
+
+
+
+testcase3:Error Handling
+discription： error occurs because of the API or tweepy misusing
+input case:  keyword：‘@1’ total——tweets： 50
+output:
+A mistake occur, please search according to: 
+403 Forbidden
+63 - User has been suspended.
+ 
+ 
