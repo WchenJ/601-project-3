@@ -73,11 +73,11 @@ states = {
             'WI': 'Wisconsin',
             'WY': 'Wyoming'
          }
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/home/ece/601/project3a/spatial-cat-330420-5cde49af3077.json"
-CONS_KEY = "7SQ9zTkVzSUTCSmQwAWNfFhlN"
-CONS_SECRET = "SrTukUTxscCZJw8KcVE9F6DuLZP7VoSjA7g5UCsgbmNyUWXRWC"
-ACC_TOKEN = "953810107711750144-wvp5EvmOGbZApLfMwtUGNYb4aliJhWt"
-ACC_SECRET = "jYK3ZABgjfTauBMnnhxhcfUD2PIgwsNbQ33gGHe8ZL8mA"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="  "
+CONS_KEY = " "
+CONS_SECRET = " "
+ACC_TOKEN = " "
+ACC_SECRET = " "
 
 
 def authentication(cons_key, cons_secret, acc_token, acc_secret):
