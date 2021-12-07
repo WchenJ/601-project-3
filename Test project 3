@@ -17,7 +17,7 @@ class Testaddition(unittest.TestCase):
         # search user and show location
         analyze_tweets('@ThiemDomi',50)
         # report when API do not support getting the amount of tweets needed 
-        analyze_tweets('@Nadal',200)
+        analyze_tweets('Nadal',200)
         # report when API unable to find enough tweet needed
         analyze_tweets('tennisAAAAA',90)
         #an error when processing
