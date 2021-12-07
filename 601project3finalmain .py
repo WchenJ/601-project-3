@@ -202,6 +202,8 @@ def analyze_tweets(keyword, total_tweets):
                         print("the attitude is NEUTRAL \n which is calculate from %s samples in which %s samples has been count"%(j,k))
                      if (total_tweets>=80):
                         print("Twitter API only afford to count in 80 tweets, the tweets out of 80 are no included.")
+                      if (j<=total_tweets):
+                        print("Unable to find enough tweets, %s tweets are calculated."%(j))
                      return total
             else:
                      api = authentication(CONS_KEY,CONS_SECRET,ACC_TOKEN,ACC_SECRET)
