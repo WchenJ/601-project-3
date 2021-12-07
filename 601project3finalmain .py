@@ -199,6 +199,8 @@ def analyze_tweets(keyword, total_tweets):
             print("the attitude is NEGATIVE \n which is calculate from %s samples in which %s samples has been count and %s is neutral"%(j,k,g))
         if (total==0)&(k!=0):
             print("the attitude is NEUTRAL \n which is calculate from %s samples in which %s samples has been count"%(j,k))
+        if (total_tweets>=80):
+            print("Twitter API only afford to count in 80 tweets, the tweets out of 80 are no included.")
         
         return total
     else:
