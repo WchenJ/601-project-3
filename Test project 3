@@ -19,7 +19,7 @@ class Testaddition(unittest.TestCase):
         # report when API do not support getting the amount of tweets needed 
         analyze_tweets('Nadal',200)
         # report when API unable to find enough tweet needed
-        analyze_tweets('tennisAAAAA',90)
+        analyze_tweets('tennisAAAAA',80)
         #an error when processing
         analyze_tweets('@1',50)
 
