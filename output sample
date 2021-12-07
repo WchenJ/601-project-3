@@ -37,5 +37,47 @@ output:
 A mistake occur, please search according to: 
 403 Forbidden
 63 - User has been suspended.
+
+
+
+testcase4: too many tweets
+discription: API do not support getting the amount of tweets needed(80)
+input case:  keyword：‘Nadal’ total——tweets： 100
+the total attitude score is 0.42770010178934763 
+
+
+
+here is the attitude contradiction bar 
  
+
+     [********************||||||]     
+positive                      negative
+
  
+
+the attitude is POSITIVE 
+ which is calculate from 80 samples in which 53 samples has been count and 27 is neutral
+Twitter API only afford to count in 80 tweets, the tweets out of 80 are no included.
+
+
+
+testcase4: too many tweets
+discription: API unable to find enough tweet needed
+input case:  keyword：‘tennisAAAAA’ total——tweets： 80
+output:
+the total attitude score is 0.00000000000000000 
+
+
+
+here is the attitude contradiction bar 
+ 
+
+     []     
+positivenegative
+
+ 
+
+the attitude is NEUTRAL 
+ which is calculate from 0 samples in which 0 samples has been count and 0 is neutral
+Unable to find enough tweets, 0 tweets are calculated.
+
